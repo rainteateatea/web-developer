@@ -25,7 +25,7 @@
 ?>
 <?php include 'inc/header.inc.php'?>
 <div id="main">
-	<div class="title" style="margin-bottom:20px;"> add ather module</div>
+	<div class="title" style="margin-bottom:20px;"> add father module</div>
 	<form method="post">
 		<table class="au">
 			<tr>

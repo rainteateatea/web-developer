@@ -44,8 +44,18 @@
 			<ul class = "child">
 				<li><a <?php if(basename($_SERVER['SCRIPT_NAME'])=='father_module.php'){echo 'class="current"';}?> href ="father_module.php">father padding list</a></li>
 				<li><a <?php if(basename($_SERVER['SCRIPT_NAME'])=='father_module_add.php'){echo 'class="current"';}?>href = "father_module_add.php">add father padding</a></li>
-				<li><a href = "#"> subpadding list</a></li>
-				<li><a href = "#"> add subpadding</a></li>
+				<?php 
+					if(basename($_SERVER['SCRIPT_NAME'])=='father_module_update.php'){
+						echo '<li><a class="current"> edit father module</a></li>';
+					}
+				?>
+				<li><a <?php if(basename($_SERVER['SCRIPT_NAME'])=='son_module.php'){echo 'class="current"';}?> href= "son_module.php"> subpadding list</a></li>
+				<li><a <?php if(basename($_SERVER['SCRIPT_NAME'])=='son_module_add.php'){echo 'class="current"';}?>href = "son_module_add.php"> add subpadding</a></li>
+				<?php 
+					if(basename($_SERVER['SCRIPT_NAME'])=='son_module_update.php'){
+						echo '<li><a class="current"> edit son module</a></li>';
+					}
+				?>
 				<li><a href = "#"> comment management</a></li>
 			</ul>
 		</li>
